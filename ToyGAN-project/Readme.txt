@@ -1,14 +1,11 @@
 This Toy Gan project started as an attempt to create an GAN that generates inverted images.
-To simplify the project, it turned into an attempt to generate inverted 1 pixel images (images consisting of 1 pixel)
+In that effort, I attempted to first create a generator that generated inverted 1 pixel images. (Images consisting of 1 pixel)
 In other words, it became inverting a number between/including 0 and 1.
 
+# The GAN's Program Description:
+# The GAN's Input is a number between 0 and 1.  
+# The GAN's generator outputs both the input number and 1 minus the input number.  
+# The GAN's discriminator determines whether the two numbers sum to 1.
 
-generate images. True example is perfect inversion. Negative example is not perfect inversion.
-
-
-See if GAN can learn single-answer problem. (e.g. 4x4 image color inversion test) 
-
-After, make simple multi-answer problem. (e.g. 4x4 white pixels into random color pixels)
-
-After, make multi-answer problem (e.g. 4x4 CCL output given black/white input.)
+The key feature of a Generative Adversarial Neural Network (GAN) is that the first part (the generator) of the GAN is trained by training the entire GAN while the second part (the discriminator) of the GAN has its weights frozen. By freezing the second half's (the discriminator's) weights while the entire GAN trains, the first half (the generator) is forced to create only outputs that when input into the second half (discriminator) return a 1 instead of a 0.
 
