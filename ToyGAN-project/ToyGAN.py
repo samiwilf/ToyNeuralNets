@@ -3,11 +3,13 @@
 # The GAN's generator outputs both the input number and 1 minus the input number.  
 # The GAN's discriminator determines whether the two numbers sum to 1.
 
-#What's interesting is that in many GAN solutions, the generator's input is noise that doesn't bear a recognizable relationship to the generator's output. In this particular example, the generator's input and output are related.
+# An interesting note is that in many GAN solutions, the generator's input is noise 
+# that doesn't bear a recognizable relationship to the generator's output. 
+# In this particular example, the generator's input and output are related.
 
-#Keras's functional api is utilized in this program. 
-#Keras's sequential API, more common among novices, is not used.
-#https://keras.io/guides/functional_api/
+# Keras's functional api is utilized in this program. 
+# Keras's sequential API, more common among novices, is not used.
+# https://keras.io/guides/functional_api/
 
 import numpy as np
 import tensorflow.keras.optimizers
