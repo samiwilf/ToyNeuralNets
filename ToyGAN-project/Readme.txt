@@ -1,6 +1,6 @@
-This Toy Gan project started as an attempt to create an GAN that generates inverted images.
-In that effort, I attempted to first create a generator that generated inverted 1 pixel images. (Images consisting of 1 pixel)
-In other words, it became inverting a number between/including 0 and 1.
+This Toy Gan project started as an attempt to create a GAN that generates inverted images.
+In that effort, I attempted to first create a generator that generates inverted 1 pixel images. (Images consisting of 1 pixel)
+And by doing that, I ended up creating a generator that takes numbers between/including 0 and 1 and returns 1 minus the numbers.
 
 # The GAN's Program Description:
 # The GAN's Input is a number between 0 and 1.  
